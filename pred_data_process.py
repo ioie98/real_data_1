@@ -137,7 +137,7 @@ def merge_csv(site_name, start_time, end_time):
         end_time = pd.to_datetime(end_time)
         df = df.drop_duplicates()
 
-        # TODO: 如果前面分片时裁剪了时间，这里也需要裁剪，反之注释掉即可
+        #
         # df = df[df['date'] <= end_time]
         # df = df[df['date'] >= start_time]
 
